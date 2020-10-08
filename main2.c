@@ -3,18 +3,30 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int starPrintf()
+int sumTwo(int a, int b)
 {
-	int i;
-	for (i=0; i<10; i++)
-	    printf("*");
+	return (a+b);
+}
+
+int square (int n)
+{
+    return (n*n);
+}
+
+int get_max (int x, int y)
+{
+	if ( x > y )
+	 return x; 
+
+    return y; //if 조건 만족 안 하면 실행 
 }
 
 int main(int argc, char *argv[]) {
 	
-	starPrintf();
-	starPrintf();
-	starPrintf();
+	printf("sumTwo : %i\n", sumTwo(1,2));
+	printf("square : %i\n", square(5));
+	printf("get_max : %i\n", get_max(10,30));
+	 
 	
 	return 0;
 }
